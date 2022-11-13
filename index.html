@@ -204,7 +204,7 @@
 					<div
 						class="opinion-card"
 						style="background-image: url(assets/quote.svg)">
-						<p class="opinion-p text-center">
+						<p class="opinion-p text-center" id="opinion-p">
 							Dzięki Łappce bardzo szybko odnalazłam moją ukochną Calineczkę.
 							Uciekła mi z domu nad ranem i nie mogłam jej dogonić. Zrozpaczona
 							szybko udostępniłam wiadomość o tym w Łappce. Już wieczorem
@@ -212,18 +212,15 @@
 							niego w ogrodzie. Jakieś 15 minut póżniej już jechałyśmy razem do
 							domu. Cudowna aplikacja!
 						</p>
-						<span class="opinion-name">Malwina</span>
-						<span class="opinion-age">32 lata</span>
+						<span class="opinion-name" id="opinion-name">Malwina</span>
+						<span class="opinion-age" id="opinion-age">32 lata</span>
 					</div>
 					<div class="arrows">
-						<img
-							src="assets/arrow-left.svg"
-							alt="Strzałka w lewo"
-							id="arrow-left" />
-						<img
-							src="assets/arrow-right.svg"
-							alt="Strzałka w prawo"
-							id="arrow-right" />
+						<span class="slider-num slider-num-active" id="num-1" onclick="quote0()">1</span>
+						<span class="slider-num" id="num-2" onclick="quote1()">2</span>
+						<span class="slider-num" id="num-3" onclick="quote2()">3</span>
+						<span class="slider-num" id="num-4" onclick="quote3()">4</span>
+						<span class="slider-num" id="num-5" onclick="quote4()">5</span>
 					</div>
 				</div>
 				<div>
@@ -249,7 +246,8 @@
 								type="email"
 								name="email"
 								id="email"
-								placeholder="Wpisz swój email" />
+								placeholder="Wpisz swój email" 
+								autocomplete="off"/>
 							<button class="subscribe">Subskrybuj</button>
 						</div>
 					</div>
