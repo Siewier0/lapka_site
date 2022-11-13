@@ -9,14 +9,31 @@
 		<link rel="stylesheet" href="styles/bootstrap.min.css" />
 		<link rel="stylesheet" href="styles/style.css" />
 	</head>
-	<body>
+	
+		
+
+		<nav class="navbar navbar-expand-lg color-change-nav ">
+			<div class="container">
+			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				<div class="navbar-nav">
+				  <a class="nav-link" aria-current="page" href="#">Strona główna</a>
+				  <a class="nav-link" href="#onas">O nas</a>
+				  <a class="nav-link" href="#dlaczego">Dlaczego Łappka?</a>
+				  <a class="nav-link" href="#opinie">Opinie</a>
+				</div>
+			  </div>
+			</div>
+		  </nav>
+	
 		<div class="container">
-			
-			<div class="row">
+				<div class="row">
 				<div class="col-xl-6 col-sm-12">
 					<div class="home-left">
 						<img src="assets/Logo.svg" alt="Logo Łappka" />
-						<h1>
+						<h1 id="start">
 							Ł<span class="app">app</span>ka - pomóż zwierzakom za pomocą
 							jednego kliknięcia!
 						</h1>
@@ -55,7 +72,7 @@
 
 			<section class="about">
 				<div class="row">
-					<div class="col-12"><h2 class="h2-about">O naszej aplikacji</h2></div>
+					<div class="col-12"><h2 class="h2-about" id="onas">O naszej aplikacji</h2></div>
 				</div>
 				<div class="row justify-content-center">
 					<div class="col-xl-5 col-sm-12 about-card">
@@ -101,7 +118,7 @@
 		<section class="why">
 			<div class="row">
 				<div class="col-12">
-					<h2 class="h2-about">Dlaczego Ł<span class="app">app</span>ka?</h2>
+					<h2 class="h2-about" id="dlaczego">Dlaczego Ł<span class="app">app</span>ka?</h2>
 				</div>
 			</div>
 			<div class="row justify-content-center">
@@ -200,7 +217,7 @@
 					<img src="assets/avatar_2.png" alt="avatar_2" />
 				</div>
 				<div>
-					<h2 class="h2-opinion text-center">Opinie</h2>
+					<h2 class="h2-opinion text-center" id="opinie">Opinie</h2>
 					<div
 						class="opinion-card"
 						style="background-image: url(assets/quote.svg)">

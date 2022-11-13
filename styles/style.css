@@ -26,6 +26,14 @@ a {
 	color: inherit;
 }
 
+/* NAVBAR */
+
+.color-change-nav {
+	background-image: var(--primaryGradient);
+	font-size: 18px;
+	font-weight: 600;
+}
+
 /* HOME-LEFT */
 
 .home-left {
