@@ -29,7 +29,7 @@ a {
 /* NAVBAR */
 
 .color-change-nav {
-	background-image: var(--primaryGradient);
+	background-image: var(--primaryGradient) !important;
 	font-size: 18px;
 	font-weight: 600;
 }
@@ -335,6 +335,74 @@ a {
 	background-color: var(--navyBlueText);
 	color: var(--innerBackground);
 }
+
+/* KONTAKT */
+
+.kontakt {
+	background-color: rgba(220, 220, 220, 0.3);
+	box-shadow: 0 0 10px 3px rgb(235, 235, 235);
+	margin: 50px;
+}
+
+.kontakt-left {
+	padding: 50px 20px 30px 100px;
+}
+
+.kontakt-left h3 {
+	font-size: 32px;
+	font-weight: 600;
+	margin: 0;
+}
+
+.adress {
+	font-size: 16px;
+	line-height: 1.2;
+	margin-top: 20px;
+}
+
+.socials svg {
+	margin: 8px;
+	cursor: pointer;
+}
+
+.kontakt-right ::placeholder {
+	color: var(--grayText);
+}
+
+.kontakt-right {
+	padding: 50px 100px 30px 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+.kontakt-right input,
+.kontakt-right textarea {
+	padding: 10px;
+	border: 1px solid var(--darkGrayText);
+	margin-bottom: 15px;
+	border-radius: 5px;
+}
+
+#kontakt-send {
+	width: 40%;
+	padding: 15px 20px;
+	border: none;
+	border-radius: 5px;
+	background-color: var(--primary);
+	color: var(--innerBackground);
+	font-size: 16px;
+	font-weight: 600;
+	transition: background-color 0.2s ease-in-out, transform 0.1s ease-in-out;
+}
+
+#kontakt-send:hover {
+	background-color: var(--primary-darker);
+}
+
+#kontakt-send:active {
+	transform: scale(0.95);
+}
+
 /* NEWSTELLER */
 
 .newsletter {
@@ -419,7 +487,7 @@ footer {
 
 @media only screen and (max-width: 768px) {
 	.newsletter {
-		width: 100%;
+		width: 150%;
 	}
 
 	.opinion-card {
@@ -431,5 +499,9 @@ footer {
 
 	.arrows img {
 		display: inline-block;
+	}
+
+	.home-right {
+		display: none;
 	}
 }
